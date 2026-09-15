@@ -17,7 +17,7 @@ export const profile: Profile = {
   initials: "RA",
   photo: "/me.webp",
   email: "rodrigoaranda00@gmail.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-handle",
+  github: "https://github.com/RodrigoAranda00",
+  linkedin: "https://www.linkedin.com/in/rodrigo-aranda-b291a32b9",
   resumeHref: "/resume/Rodrigo-Aranda-Resume.pdf",
 };

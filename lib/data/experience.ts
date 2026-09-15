@@ -24,9 +24,9 @@ export const experience: ExperienceEntry[] = [
     endDate: "2025-01",
     logo: { placeholder: false, src: "/experiences/andine_logo.png", alt: "Andine Soft logo" },
     images: [
-      { placeholder: true, initials: "AS", label: "Dashboard" },
-      { placeholder: true, initials: "AS", label: "Reports" },
-      { placeholder: true, initials: "AS", label: "Settings" },
+      { placeholder: false, src: "/experiences/andine1.jpeg", alt: "Andine landing page", label: "Home" },
+      { placeholder: false, src: "/experiences/andine2.jpeg", alt: "Andine invoice upload screen", label: "Invoices" },
+      { placeholder: false, src: "/experiences/andine3.jpeg", alt: "Andine login screen", label: "Login" },
     ],
     stack: ["Django", "MySQL", "Python" , "JavaScript"],
   },

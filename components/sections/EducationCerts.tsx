@@ -36,10 +36,6 @@ export async function EducationCerts() {
                 <span
                   aria-hidden="true"
                   className="absolute -inset-3 -z-10 rounded-xl opacity-60 blur-sm transition-opacity duration-300 group-hover:opacity-90"
-                  style={{
-                    background:
-                      "radial-gradient(circle, var(--color-experience-accent-glow) 0%, transparent 65%)",
-                  }}
                 />
                 <div className="relative rounded-xl border border-white/10 bg-experience-surface p-5 shadow-lg shadow-black/30 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-xl hover:shadow-black/40">
                   <div className="flex items-center gap-3">

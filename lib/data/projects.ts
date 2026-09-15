@@ -31,7 +31,7 @@ export const projects: Project[] = [
     },
     links: {
       repo: "https://github.com/RodrigoAranda00/trolley.git",
-      live: "https://your-username-trolley.vercel.app",
+      live: "https://trolley-one.vercel.app/",
     },
     hasLiveDemo: true,
     featured: true,
@@ -44,9 +44,8 @@ export const projects: Project[] = [
     coverImage: { placeholder: true, initials: "TM" },
     links: {
       repo: "https://github.com/your-username/task-manager",
-      live: "https://your-username-cloud-demo.vercel.app",
     },
-    hasLiveDemo: true,
+    hasLiveDemo: false,
     featured: false,
   },
   {
@@ -60,7 +59,7 @@ export const projects: Project[] = [
       alt: "Screenshot of the Done-ish task manager",
     },
     links: {
-      repo: "https://github.com/your-username/analytics-dashboard",
+      repo: "https://github.com/RodrigoAranda00/doneish",
     },
     hasLiveDemo: false,
     featured: true,
