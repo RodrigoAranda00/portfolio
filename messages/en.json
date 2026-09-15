@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "beyondWork": "Beyond Work",
+    "openMenu": "Open menu",
+    "changeLanguage": "Change language"
+  },
+  "hero": {
+    "name": "Rodrigo Aranda",
+    "title": "Full-Stack Developer",
+    "tagline": "Hey there! I'm a full-stack developer based in Argentina with 4 years of experience building and maintaining web applications across the stack.",
+    "ctaResume": "Resume",
+    "skillsLabel": "Currently working with",
+    "scrollHint": "Scroll",
+    "viewAllSkills": "View All",
+    "allSkillsTitle": "All Technologies",
+    "skillCategories": {
+      "languages": "Languages",
+      "frameworksLibraries": "Frameworks & Libraries",
+      "databases": "Databases",
+      "toolsPractices": "Tools & Practices"
+    }
+  },
+  "experience": {
+    "heading": "Experience",
+    "viewDetails": "View full role details",
+    "contactCta": "Contact me",
+    "stackHeading": "Stack",
+    "productHeading": "About the product",
+    "responsibilitiesHeading": "Responsibilities",
+    "achievementHeading": "Key achievement",
+    "back": "Back to home",
+    "clientLabel": "Client:",
+    "roleLabel": "Role:",
+    "galleryDotLabel": "Show image {index}",
+    "roles": {
+      "junior-fullstack": {
+        "title": "Junior Full-Stack Developer",
+        "description": "Leading development of a Django and Next.js platform, mentoring junior developers and owning key features end-to-end.",
+        "highlight": "Built the OCR engine and DB architecture for a complex receipt manager.",
+        "product": "Andine is a web platform for insurance and medical professionals to upload and securely organize receipts. It uses OCR to automatically extract and save the relevant information, regardless of the receipt's design.",
+        "responsibilities": "Working within a lean 2-3 person engineering team at an early-stage startup, designed and implemented scalable, secure back-end architectures in Django, built RESTful APIs for client-server communication, and optimized databases to support critical web-page functionality. Also configured and integrated authentication and authorization systems based on OAuth 2.0 and OIDC, managing access and refresh tokens in line with modern security standards and best practices. Development continued through MVP completion, though the product's public launch is still pending on the product owner's side.",
+        "achievement": "Independently designed, built, and optimized an Optical Character Recognition (OCR) web application, one of the product's central features, using JavaScript, Python, and Tesseract."
+      },
+      "fullstack-developer": {
+        "title": "Full-Stack Developer",
+        "description": "Built and maintained REST APIs with Django and MySQL, and customer-facing features with React.",
+        "highlight": "Helped maintain and expand an EdTech platform for an international client.",
+        "product": "Flocabulary is a K-12 online learning platform that teaches vocabulary and core subjects through hip-hop music, videos, and games.",
+        "responsibilities": "Working within a team of 8-10 engineers, modernized legacy React components and resolved a large backlog of bugs in the platform's older codebase, and built new frontend components from Figma designs, including a full redesign of the login page. Carried out accessibility work to bring key flows up to WCAG 2.1 AA, testing with screen readers like JAWS and NVDA alongside manual and AI-assisted audits. Also optimized database queries, fixing N+1 patterns, adding indexing, slimming payloads, and introducing pagination, which sped up lesson listings across the site.",
+        "achievement": "Helped build two brand-new game modes for the platform, owning the frontend implementation and state management with Redux."
+      }
+    },
+    "present": "Present",
+    "whatsNext": "What's Next?",
+    "futureLabel": "Open to new opportunities",
+    "futureBlurb": "Always excited to work on meaningful products and join a great team."
+  },
+  "education": {
+    "heading": "Education & Certifications",
+    "inProgress": "In Progress",
+    "entries": {
+      "teaching-degree": {
+        "title": "English Language Teacher"
+      },
+      "aws-saa": {
+        "title": "AWS Certified Solutions Architect – Associate"
+      },
+      "digital-courses": {
+        "title": "Continuous Learning",
+        "year": "10+ Courses"
+      }
+    }
+  },
+  "beyondWork": {
+    "heading": "Beyond Work",
+    "intro": "I'm always curious, picking up new hobbies or learning new skills.",
+    "hobbiesBlurb": "When I'm not building software, I'm usually making music, lifting at the gym, or telling fun stories in D&D with my friends.",
+    "learningBlurb": "Right now I'm also learning Mandarin to connect with more people, and cloud architecture to grow into new areas. I'm picking up AI engineering too, since I'd rather be one of the people steering it to the greater good rather than one of the people just riding the wave.",
+    "items": {
+      "music": "Music",
+      "lifting": "Lifting",
+      "dnd": "D&D"
+    }
+  },
+  "projects": {
+    "heading": "Projects",
+    "repo": "Repo",
+    "liveDemo": "Live Demo",
+    "stackHeading": "Stack",
+    "items": {
+      "trello-clone": {
+        "title": "Trolley",
+        "summary": "An overly dramatic Trello clone that lets users organize tasks while brooding. Drag-and-drop across boards and columns, priority and due-date tracking, with Clerk authentication."
+      },
+      "cloud-demo": {
+        "title": "Task Manager",
+        "summary": "A straightforward task manager for organizing to-dos and tracking progress, built with Next.js and a PostgreSQL backend."
+      },
+      "adhd-todo-list": {
+        "title": "Done-ish",
+        "summary": "A minimalist task manager built to keep an ADHD brain on track. I still use it to survive chores and grocery runs. Quick-add capture, drag-to-reorder lists, and everything stored locally: no accounts, less friction."
+      }
+    }
+  },
+  "contact": {
+    "emailLabel": "Email",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
+    "sendEmail": "Send email",
+    "copyEmail": "Copy email",
+    "emailCopied": "Copied!"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "cta": "Hiring? Let's talk."
+  }
+}

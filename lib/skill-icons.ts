@@ -1,0 +1,51 @@
+import type { ComponentType } from "react";
+import {
+  SiBootstrap,
+  SiClerk,
+  SiDjango,
+  SiExpo,
+  SiGit,
+  SiJavascript,
+  SiLinux,
+  SiMysql,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiSass,
+  SiShadcnui,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+  SiZod,
+} from "react-icons/si";
+import { Accessibility, Smartphone } from "lucide-react";
+
+type SkillIcon = ComponentType<{ className?: string }>;
+
+export const skillIcons: Record<string, SkillIcon> = {
+  Django: SiDjango,
+  Python: SiPython,
+  JavaScript: SiJavascript,
+  React: SiReact,
+  "Next.js": SiNextdotjs,
+  TypeScript: SiTypescript,
+  "Tailwind CSS": SiTailwindcss,
+  Sass: SiSass,
+  MySQL: SiMysql,
+  PostgreSQL: SiPostgresql,
+  Supabase: SiSupabase,
+  Prisma: SiPrisma,
+  Clerk: SiClerk,
+  Git: SiGit,
+  Postman: SiPostman,
+  Linux: SiLinux,
+  Bootstrap: SiBootstrap,
+  Shadcn: SiShadcnui,
+  "React Native": Smartphone,
+  Expo: SiExpo,
+  Zod: SiZod,
+  "A11y Screen Readers": Accessibility,
+};

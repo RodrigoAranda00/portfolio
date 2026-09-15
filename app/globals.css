@@ -1,0 +1,224 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-canvas: #0a0a0d;
+  --color-base-elevated: #12121a;
+  --color-experience-surface: #16182e;
+  --color-fg: #f5f4f7;
+  --color-fg-muted: #a8a6b3;
+
+  --color-indigo: #37387d;
+  --color-indigo-tint: #424290;
+  --color-indigo-glow: #5a5db3;
+
+  --color-maroon: #411e26;
+  --color-maroon-tint: #8d3f40;
+  --color-maroon-glow: #b35a5d;
+
+  --color-experience-accent: #4d6df6;
+  --color-experience-accent-glow: #7d95ff;
+
+  --color-tone-a-surface: var(--color-indigo);
+  --color-tone-a-tint: var(--color-indigo-tint);
+  --color-tone-a-accent: var(--color-maroon-glow);
+  --color-tone-b-surface: var(--color-maroon);
+  --color-tone-b-tint: var(--color-maroon-tint);
+  --color-tone-b-accent: var(--color-indigo-glow);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: var(--color-canvas);
+  --foreground: var(--color-fg);
+  --card: var(--color-base-elevated);
+  --card-foreground: var(--color-fg);
+  --popover: var(--color-base-elevated);
+  --popover-foreground: var(--color-fg);
+  --primary: var(--color-fg);
+  --primary-foreground: var(--color-canvas);
+  --secondary: var(--color-base-elevated);
+  --secondary-foreground: var(--color-fg);
+  --muted: var(--color-base-elevated);
+  --muted-foreground: var(--color-fg-muted);
+  --accent: var(--color-base-elevated);
+  --accent-foreground: var(--color-fg);
+  --destructive: #e5484d;
+  --border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --input: color-mix(in oklab, var(--color-fg) 16%, transparent);
+  --ring: var(--color-maroon-glow);
+  --radius: 0.625rem;
+  --chart-1: var(--color-indigo-glow);
+  --chart-2: var(--color-maroon-glow);
+  --chart-3: var(--color-indigo-tint);
+  --chart-4: var(--color-maroon-tint);
+  --chart-5: var(--color-fg);
+  --sidebar: var(--color-base-elevated);
+  --sidebar-foreground: var(--color-fg);
+  --sidebar-primary: var(--color-indigo-glow);
+  --sidebar-primary-foreground: var(--color-fg);
+  --sidebar-accent: var(--color-base-elevated);
+  --sidebar-accent-foreground: var(--color-fg);
+  --sidebar-border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --sidebar-ring: var(--color-maroon-glow);
+}
+
+.dark {
+  --background: var(--color-canvas);
+  --foreground: var(--color-fg);
+  --card: var(--color-base-elevated);
+  --card-foreground: var(--color-fg);
+  --popover: var(--color-base-elevated);
+  --popover-foreground: var(--color-fg);
+  --primary: var(--color-fg);
+  --primary-foreground: var(--color-canvas);
+  --secondary: var(--color-base-elevated);
+  --secondary-foreground: var(--color-fg);
+  --muted: var(--color-base-elevated);
+  --muted-foreground: var(--color-fg-muted);
+  --accent: var(--color-base-elevated);
+  --accent-foreground: var(--color-fg);
+  --destructive: #e5484d;
+  --border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --input: color-mix(in oklab, var(--color-fg) 16%, transparent);
+  --ring: var(--color-maroon-glow);
+}
+
+html {
+  color-scheme: dark;
+  scrollbar-gutter: stable;
+}
+
+@utility scrollbar-hide {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+::view-transition-old(.nav-forward) {
+  --slide-offset: -60px;
+  animation:
+    150ms ease-in both via-fade reverse,
+    400ms ease-in-out both via-slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --slide-offset: 60px;
+  animation:
+    210ms ease-out 150ms both via-fade,
+    400ms ease-in-out both via-slide;
+}
+
+::view-transition-old(.nav-back) {
+  --slide-offset: 60px;
+  animation:
+    150ms ease-in both via-fade reverse,
+    400ms ease-in-out both via-slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --slide-offset: -60px;
+  animation:
+    210ms ease-out 150ms both via-fade,
+    400ms ease-in-out both via-slide;
+}
+
+@keyframes via-slide {
+  from {
+    translate: var(--slide-offset);
+  }
+  to {
+    translate: 0;
+  }
+}
+@keyframes via-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+::view-transition {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}

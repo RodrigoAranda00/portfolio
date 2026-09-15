@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "beyondWork": "Más Allá del Trabajo",
+    "openMenu": "Abrir menú",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "hero": {
+    "name": "Rodrigo Aranda",
+    "title": "Desarrollador Full-Stack",
+    "tagline": "¡Buenas! Soy un desarrollador full-stack viviendo Argentina con 4 años de experiencia desarrollando y manteniendo aplicaciones web en todo el stack.",
+    "ctaResume": "Currículum",
+    "skillsLabel": "Actualmente trabajo con",
+    "scrollHint": "Scrollea",
+    "viewAllSkills": "Ver Todo",
+    "allSkillsTitle": "Todo mi Arsenal",
+    "skillCategories": {
+      "languages": "Lenguajes",
+      "frameworksLibraries": "Frameworks y Librerías",
+      "databases": "Bases de Datos",
+      "toolsPractices": "Herramientas y Prácticas"
+    }
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "viewDetails": "Ver todos los detalles",
+    "contactCta": "Contáctame",
+    "stackHeading": "Stack",
+    "productHeading": "Sobre el producto",
+    "responsibilitiesHeading": "Responsabilidades",
+    "achievementHeading": "Logro destacado",
+    "back": "Volver al inicio",
+    "clientLabel": "Cliente:",
+    "roleLabel": "Rol:",
+    "galleryDotLabel": "Mostrar imagen {index}",
+    "roles": {
+      "junior-fullstack": {
+        "title": "Junior Full-Stack Developer",
+        "description": "Lidero el desarrollo de una plataforma con Django y Next.js, guiando a desarrolladores junior y liderando funcionalidades clave de extremo a extremo.",
+        "highlight": "Desarrollé el motor OCR y la arquitectura de BD de un complejo gestor de recibos médicos.",
+        "product": "Andine es una plataforma web para profesionales de los sectores de seguros y salud, para subir y organizar recibos de forma segura. Usa OCR para extraer y guardar automáticamente la información relevante, sin importar el diseño del recibo.",
+        "responsibilities": "Trabajando dentro de un equipo reducido de 2 a 3 personas en una startup, diseñé e implementé arquitecturas de backend escalables y seguras en Django, desarrollé APIs RESTful para la comunicación cliente-servidor, y optimicé bases de datos para dar soporte a funcionalidades críticas del sitio. También configuré e integré sistemas de autenticación y autorización basados en OAuth 2.0 y OIDC, gestionando tokens de acceso y refresco conforme a los estándares de seguridad y mejores prácticas modernas. Mi posición duró hasta completar el MVP, aunque el lanzamiento público del producto todavía está pendiente por parte del product owner.",
+        "achievement": "Diseñé, desarrollé y optimicé de forma independiente una aplicación web de reconocimiento óptico de caracteres (OCR), una de las funcionalidades centrales del producto, utilizando JavaScript, Python y Tesseract."
+      },
+      "fullstack-developer": {
+        "title": "Full-Stack Developer",
+        "description": "Construí y mantuve APIs REST con Django y MySQL, además de funcionalidades de cara al cliente con React.",
+        "highlight": "Ayudé a mantener y expandir una plataforma de EdTech para un cliente internacional.",
+        "product": "Flocabulary es una plataforma de aprendizaje en línea K-12 que enseña vocabulario y materias básicas a través de música hip-hop, videos y juegos.",
+        "responsibilities": "Trabajando dentro de un equipo de 8 a 10 ingenieros, modernicé componentes legacy de React y resolví un gran backlog de bugs del código más antiguo de la plataforma, además de construir nuevos componentes de frontend a partir de diseños en Figma, incluyendo un rediseño completo de la página de inicio de sesión. Realicé trabajo de accesibilidad para llevar los flujos clave a WCAG 2.1 AA, probando con lectores de pantalla como JAWS y NVDA junto con auditorías manuales y asistidas por IA. También optimicé consultas a la base de datos, corrigiendo patrones N+1, agregando indexado, reduciendo el tamaño de los payloads e introduciendo paginación, lo que aceleró los listados de lecciones en todo el sitio.",
+        "achievement": "Ayudé a construir dos nuevos modos de juego para la plataforma, encargándome de la implementación de frontend y el manejo de estado con Redux."
+      }
+    },
+    "present": "Actualidad",
+    "whatsNext": "¿Qué sigue?",
+    "futureLabel": "Abierto a nuevas oportunidades",
+    "futureBlurb": "Con ganas de sumarme a un gran equipo y crear productos con impacto."
+  },
+  "education": {
+    "heading": "Educación y Certificaciones",
+    "inProgress": "En Curso",
+    "entries": {
+      "teaching-degree": {
+        "title": "Profesorado en Inglés"
+      },
+      "aws-saa": {
+        "title": "AWS Certified Solutions Architect – Associate"
+      },
+      "digital-courses": {
+        "title": "Aprendizaje Continuo",
+        "year": "+10 Cursos"
+      }
+    }
+  },
+  "beyondWork": {
+    "heading": "Más Allá del Trabajo",
+    "intro": "Soy curioso por naturaleza, siempre sumando un nuevo pasatiempo o aprendiendo algo nuevo.",
+    "hobbiesBlurb": "Cuando no estoy programando, suelo estar haciendo música, levantando pesas en el gimnasio, o contando historias divertidas de D&D con mis amigos.",
+    "learningBlurb": "Ahora también estoy aprendiendo mandarín para conectar con más gente, y arquitectura en la nube para crecer en nuevas áreas. También me estoy adentrando en ingeniería de IA, porque quiero ser de quienes la guían hacia el bien colectivo, no de quienes solo se suben a la ola.",
+    "items": {
+      "music": "Música",
+      "lifting": "Pesas",
+      "dnd": "D&D"
+    }
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "repo": "Repo",
+    "liveDemo": "Demo en vivo",
+    "stackHeading": "Stack",
+    "items": {
+      "trello-clone": {
+        "title": "Trolley",
+        "summary": "Un Trello clone exageradamente dramático para organizar tareas y rumiar tus pensamientos. Arrastrar y soltar entre tableros y columnas, seguimiento de prioridad y fecha límite, con autenticación de Clerk."
+      },
+      "cloud-demo": {
+        "title": "Gestor de Tareas",
+        "summary": "Un gestor de tareas simple para organizar pendientes y seguir el progreso, construido con Next.js y una base de datos PostgreSQL."
+      },
+      "adhd-todo-list": {
+        "title": "Done-ish",
+        "summary": "Un gestor de tareas minimalista diseñado para mantener a raya a un cerebro con TDAH. Todavía lo uso para sobrevivir a los quehaceres y las compras del súper. Captura rápida, listas que se reordenan arrastrando, y todo almacenado localmente: sin cuentas, solo menos fricción."
+      }
+    }
+  },
+  "contact": {
+    "emailLabel": "Correo",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
+    "sendEmail": "Enviar correo",
+    "copyEmail": "Copiar correo",
+    "emailCopied": "¡Copiado!"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "cta": "¿Estás contratando? Hablemos."
+  }
+}
