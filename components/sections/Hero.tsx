@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { ChevronDown, Download, Mouse, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,13 +29,17 @@ function SkillPill({ skill }: { skill: string }) {
 export async function Hero() {
   const t = await getTranslations("hero");
   const tContact = await getTranslations("contact");
+  const locale = await getLocale();
 
   const [firstName, ...restName] = t("name").split(" ");
   const lastName = restName.join(" ");
   const heroSkills = skills.slice(0, 6);
+  const resumeHref =
+    profile.resumeHrefByLocale[locale as "en" | "es"] ??
+    profile.resumeHrefByLocale.en;
 
   return (
-    <div className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center text-center sm:text-left">
+    <div className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center pb-16 pt-8 text-center sm:pb-0 sm:pt-0 sm:text-left">
       <div className="flex w-full flex-col gap-10">
         <div className="flex w-full flex-col items-center gap-8 sm:flex-row sm:items-stretch sm:justify-center sm:gap-10">
           <Reveal delay={0.1} className="order-2 max-w-2xl sm:order-1">
@@ -54,7 +58,7 @@ export async function Hero() {
                 size="lg"
                 className="h-12 gap-2 bg-tone-a-accent px-6 text-base text-fg hover:bg-tone-a-accent/80"
                 nativeButton={false}
-                render={<a href={profile.resumeHref} download />}
+                render={<a href={resumeHref} download />}
               >
                 <Download className="size-4" />
                 {t("ctaResume")}
@@ -164,7 +168,7 @@ export async function Hero() {
         </Reveal>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-2 flex animate-bounce flex-col items-center gap-0.5 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">
+      <div className="pointer-events-none absolute inset-x-0 bottom-2 hidden animate-bounce flex-col items-center gap-0.5 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] sm:flex">
         <span className="mt-1 text-xs font-medium uppercase tracking-wide">
           {t("scrollHint")}
         </span>

@@ -7,7 +7,7 @@ export interface Profile {
   email: string;
   github: string;
   linkedin: string;
-  resumeHref: string;
+  resumeHrefByLocale: Record<"en" | "es", string>;
 }
 
 export const profile: Profile = {
@@ -19,5 +19,8 @@ export const profile: Profile = {
   email: "rodrigoaranda00@gmail.com",
   github: "https://github.com/RodrigoAranda00",
   linkedin: "https://www.linkedin.com/in/rodrigo-aranda-b291a32b9",
-  resumeHref: "/resume/Rodrigo-Aranda-Resume.pdf",
+  resumeHrefByLocale: {
+    en: "/resume/Rodrigo-Aranda-Resume.pdf",
+    es: "/resume/Rodrigo-Aranda-CV.pdf",
+  },
 };

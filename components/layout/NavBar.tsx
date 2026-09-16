@@ -29,10 +29,8 @@ export async function NavBar() {
 
         <NavLinks items={items} />
 
-        <div className="flex items-center justify-end gap-3 justify-self-end">
-          <div className="hidden items-center gap-3 md:flex">
-            <LanguageSwitcher />
-          </div>
+        <div className="col-start-3 flex items-center justify-end gap-3 justify-self-end">
+          <LanguageSwitcher />
 
           <MobileNav items={items} />
         </div>
