@@ -40,6 +40,6 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     id: "toolsPractices",
-    skills: ["Git", "Postman", "Linux", "REST APIs", "A11y Screen Readers"],
+    skills: ["Git", "Docker", "Postman", "Linux", "REST APIs", "A11y Screen Readers"],
   },
 ];
